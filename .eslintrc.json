@@ -1,0 +1,36 @@
+{
+	"env": {
+		"browser": false,
+		"node": true,
+		"es6": true
+	},
+	"extends": ["eslint:recommended", "plugin:react/recommended", "plugin:flowtype/recommended"],
+	"globals": {
+		"_DEV_": false,
+		"fetch": false
+	},
+	"parser": "babel-eslint",
+	"parserOptions": {
+		"ecmaFeatures": {
+			"experimentalObjectRestSpread": true,
+			"jsx": true
+		},
+		"sourceType": "module"
+	},
+	"plugins": ["flowtype", "react-native", "react", "sort-imports-es6-autofix"],
+	"rules": {
+		"indent": ["error", 2, { "SwitchCase": 1 }],
+		"linebreak-style": ["error", "unix"],
+		"no-console": ["error"],
+		"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+		"no-var": ["error"],
+		"prefer-const": ["error"],
+		"quotes": ["error", "single", { "avoidEscape": true }],
+		"react/jsx-no-bind": ["error"],
+		"react/prop-types": "off",
+                "react/no-deprecated": "off",
+		"semi": ["error", "always"],
+		"sort-imports-es6-autofix/sort-imports-es6": ["error"],
+                "react/no-deprecated": "off"
+	}
+}
