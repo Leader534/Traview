@@ -2750,6 +2750,23 @@ es-to-primitive@^1.2.0:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
+es6-template-regex@^0.1.1:
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/es6-template-regex/-/es6-template-regex-0.1.1.tgz#e517b9e0f742beeb8d3040834544fda0e4651467"
+  integrity sha1-5Re54PdCvuuNMECDRUT9oORlFGc=
+
+es6-template@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/es6-template/-/es6-template-1.0.4.tgz#56af42b57a31f5175d3f567d44b1efc12d2f2636"
+  integrity sha1-Vq9CtXox9RddP1Z9RLHvwS0vJjY=
+  dependencies:
+    es6-template-regex "^0.1.1"
+    extend-shallow "^2.0.1"
+    get-value "^2.0.2"
+    lazy-cache "^1.0.3"
+    mkdirp "^0.5.1"
+    sliced "^1.0.1"
+
 escape-html@~1.0.3:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/escape-html/-/escape-html-1.0.3.tgz#0258eae4d3d0c0974de1c169188ef0051d1d1988"
@@ -3404,7 +3421,7 @@ get-stream@^4.0.0:
   dependencies:
     pump "^3.0.0"
 
-get-value@^2.0.3, get-value@^2.0.6:
+get-value@^2.0.2, get-value@^2.0.3, get-value@^2.0.6:
   version "2.0.6"
   resolved "https://registry.yarnpkg.com/get-value/-/get-value-2.0.6.tgz#dc15ca1c672387ca76bd37ac0a395ba2042a2c28"
   integrity sha1-3BXKHGcjh8p2vTesCjlbogQqLCg=
@@ -4449,6 +4466,11 @@ jest@^24.8.0:
     import-local "^2.0.0"
     jest-cli "^24.8.0"
 
+jetifier@^1.6.4:
+  version "1.6.6"
+  resolved "https://registry.yarnpkg.com/jetifier/-/jetifier-1.6.6.tgz#fec8bff76121444c12dc38d2dad6767c421dab68"
+  integrity sha512-JNAkmPeB/GS2tCRqUzRPsTOHpGDah7xP18vGJfIjZC+W2sxEHbxgJxetIjIqhjQ3yYbYNEELkM/spKLtwoOSUQ==
+
 "js-tokens@^3.0.0 || ^4.0.0", js-tokens@^4.0.0:
   version "4.0.0"
   resolved "https://registry.yarnpkg.com/js-tokens/-/js-tokens-4.0.0.tgz#19203fb59991df98e3a287050d4647cdeaf32499"
@@ -4660,6 +4682,11 @@ kleur@^3.0.2:
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-3.0.3.tgz#a79c9ecc86ee1ce3fa6206d1216c501f147fc07e"
   integrity sha512-eTIzlVOSUR+JxdDFepEYcBMtZ9Qqdef+rnzWdRZuMbOywu5tO2w2N7rqjoANZ5k9vywhL6Br1VRjUIgTQx4E8w==
 
+lazy-cache@^1.0.3:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/lazy-cache/-/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
+  integrity sha1-odePw6UEdMuAhF07O24dpJpEbo4=
+
 lcid@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/lcid/-/lcid-1.0.0.tgz#308accafa0bc483a3867b4b6f2b9506251d1b835"
@@ -4819,15 +4846,10 @@ lodash.throttle@^4.1.1:
   resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
   integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
 
-lodash@^4.0.0, lodash@^4.17.11, lodash@^4.17.5, lodash@^4.3.0, lodash@^4.6.1:
-  version "4.17.11"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
-  integrity sha512-cQKh8igo5QUhZ7lg38DYWAxMvjSAKG0A8wGSVimP07SIUEK2UO+arSRKbRZWtelMtN5V0Hkwh5ryOto/SshYIg==
-
-lodash@^4.17.10, lodash@^4.17.14, lodash@^4.17.4:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+lodash@^4.0.0, lodash@^4.17.10, lodash@^4.17.11, lodash@^4.17.14, lodash@^4.17.4, lodash@^4.17.5, lodash@^4.3.0, lodash@^4.6.1:
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 loose-envify@^1.0.0, loose-envify@^1.1.0, loose-envify@^1.3.1, loose-envify@^1.4.0:
   version "1.4.0"
@@ -6243,6 +6265,16 @@ react-native-button@^2.3.0:
   dependencies:
     prop-types "^15.5.10"
 
+react-native-debugger-open@^0.3.19:
+  version "0.3.25"
+  resolved "https://registry.yarnpkg.com/react-native-debugger-open/-/react-native-debugger-open-0.3.25.tgz#4e735f7fb5eb10befe81e16d1dcc54b9f1a2d1d8"
+  integrity sha512-jOzdcBIRl2beyOriwhedg/3Xj0m15htD5+PEEKlCM6Mcwc3g+8SomSBd0E49qrhgpvDQYWLDHNdU+5OZAXIgsw==
+  dependencies:
+    chalk "^1.1.3"
+    es6-template "^1.0.4"
+    minimist "^1.2.0"
+    semver "^5.4.1"
+
 react-native-debugger@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/react-native-debugger/-/react-native-debugger-1.1.0.tgz#88ae36c229a7da6c8e97e0e98e366eca55d4736a"
@@ -7175,6 +7207,11 @@ slash@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/slash/-/slash-2.0.0.tgz#de552851a1759df3a8f206535442f5ec4ddeab44"
   integrity sha512-ZYKh3Wh2z1PpEXWr0MpSBZ0V6mZHAQfYevttO11c51CaWjGTaadiKZ+wVt1PbMlDV5qhMFslpZCemhwOK7C89A==
+
+sliced@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/sliced/-/sliced-1.0.1.tgz#0b3a662b5d04c3177b1926bea82b03f837a2ef41"
+  integrity sha1-CzpmK10Ewxd7GSa+qCsD+Dei70E=
 
 slide@^1.1.5:
   version "1.1.6"
